@@ -1,13 +1,74 @@
-<html>
-  <head>
-    
-    <tittle>
-      primer proyecto hola mundo como vas
-    </tittle> 
-  </head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="graphics.css">
+   
+</head>
 <body>
-<a> hola mundo</a>
-  
+
+<header>
+    <h1>Factura de Compra</h1>
+</header>
+
+<div class="container">
+    <!-- Detalles de la Factura -->
+    <div class="invoice-header">
+        <div>
+            <h2>Factura N°: 00123</h2>
+            <p>Fecha: 11 de Enero 2025</p>
+            <p>Vencimiento: 25 de Enero 2025</p>
+        </div>
+        <div>
+            <p><strong>Cliente:</strong> Juan Pérez</p>
+            <p><strong>Dirección:</strong> Calle Ficticia 123, Ciudad</p>
+            <p><strong>Teléfono:</strong> +1234567890</p>
+        </div>
+    </div>
+
+    <!-- Tabla de Productos -->
+    <table class="table-container">
+        <thead>
+            <tr>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Producto A</td>
+                <td>2</td>
+                <td>$10.00</td>
+                <td>$20.00</td>
+            </tr>
+            <tr>
+                <td>Producto B</td>
+                <td>3</td>
+                <td>$15.00</td>
+                <td>$45.00</td>
+            </tr>
+            <tr>
+                <td>Producto C</td>
+                <td>1</td>
+                <td>$25.00</td>
+                <td>$25.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Total de la Factura -->
+    <div class="total">
+        <p><span>Total:</span> $90.00</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Mi Empresa - Todos los derechos reservados</p>
+</footer>
+
 </body>
-  
 </html>
