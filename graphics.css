@@ -1,21 +1,42 @@
 
 body {
+    display: flex;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
+    width: 100%;
+    height: 100%;
+    
+   
 }
 
-header {
-    background-color: #4CAF50;
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1vw;
+}
+
+
+.header_1 {
+    background-color: #242b3c;
     color: white;
-    padding: 10px 20px;
     text-align: center;
+    height:45vw;
+    width: 30%;
+    overflow-y: scroll;
+}
+.container {
+    padding: 10px;
+    background-color: aquamarine;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.container {
-    width: 80%;
-    margin: 20px auto;
+
+.item{
+    flex-grow: 1;
+    flex-basis: 200;
 }
 
 .invoice-header {
@@ -63,12 +84,41 @@ header {
     font-weight: bold;
 }
 
+
+/* Diseño de Importancia donde va el nombre empresarial*/
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+    padding: 8px 19px; /* Reduces el padding para hacerlo más compacto */
+    background-color: #222; /* Un color ligeramente más oscuro para dar contraste */
+    color: #f3efef; /* Color más suave para el texto */
     position: fixed;
-    width: 100%;
     bottom: 0;
+    
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra para hacerlo más bonito */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 10px; /* Un poco más grande para mejorar la legibilidad */
+}
+
+header{
+    text-align: center;
+    padding: 8px 19px; /* Reduces el padding para hacerlo más compacto */
+    background-color: #222; /* Un color ligeramente más oscuro para dar contraste */
+    color: #f3efef; /* Color más suave para el texto */
+    position: fixed;
+    bottom: 0;
+    
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra para hacerlo más bonito */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
