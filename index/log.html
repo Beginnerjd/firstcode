@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>log</title>
-    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="css/log.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
     
-    <title>Mi Proyecto</title>
+    <title>Ingresar</title>
    
    
   
@@ -17,7 +19,13 @@
 <body>
 
     <div class="parent">
-        <div class="div1">  </div>
+        
+        <div class="div1">
+            <p style="padding: 0; margin: 0;">Accede a tu cuenta ya</p>
+            <p style="padding: 0; margin: 0;">o</p>
+           <a class="a1" href=""><p style="font-size: 30px;padding: 0; margin: 0;">Registrate ahora mismo</p></a>  
+        
+        </div>
         <div class="div2"> </div>
 
 
@@ -31,7 +39,10 @@
                 </div>
 
                 <div class="div5"> 
-                    <input class="submit" type="submit">
+                    <input class="submit" type="submit" value="Ingresar"> 
+                    <p style="padding-top: 2%; margin: 0;"><a class="a2"  href="" >¿se te olvido la contraseña?</a></p>
+                    <p style="padding: 0; margin: 0;">o</p>
+                    <p style="padding: 0; margin: 0;"><a class="a2"  href="">¿no tienes cuenta? </a></p>
 
 
                     
@@ -39,23 +50,47 @@
 
             <div class="div6"> </div>
 
-
-
-
         <div class="div7"> 
           
-
-
             <footer>
                 &copy; 2025 Mi Empresa - Todos los derechos reservados
             </footer>
         
+
+          
     </div>
 
+    <button class="btn-flotante" id="btnMenu">+</button>
+
+    <div class="menu-flotante" id="menu">
+        <a href="#">Opción 1</a>
+        <a href="#">Opción 2</a>
+        <a href="#">Opción 3</a>
+    </div>
        
         </div>
 
-    
+        <script>
+       const btnMenu = document.getElementById("btnMenu");
+        const menu = document.getElementById("menu");
+
+        
+        function mostrarMenu() {
+            menu.style.display = "block";
+        }
+
+       
+        function ocultarMenu() {
+            menu.style.display = "none";
+        }
+
+       
+        btnMenu.addEventListener("click", mostrarMenu);
+        btnMenu.addEventListener("mouseenter", mostrarMenu);
+
+        
+        menu.addEventListener("mouseleave", ocultarMenu);
+    </script>
 
 </body>
 
